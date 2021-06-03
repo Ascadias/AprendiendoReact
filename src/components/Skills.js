@@ -11,6 +11,7 @@ class Skills extends Component {
                     <li>CSS3</li>
                     <li>JAVASCRIPT</li>
                     <li>NODEJS</li>
+                    <li>REACTJS</li>
                     <li>FIREBASE</li>
                     <li>BOOTSTRAP</li>
                 </ul>
