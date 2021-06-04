@@ -6,11 +6,11 @@ class Aside extends Component {
         return (
             <React.Fragment>
                 <ul>
-                    <li>01</li>
-                    <li>02</li>
-                    <li>03</li>
-                    <li>04</li>
-                    <li>05</li>
+                    <li>Elemento 01</li>
+                    <li>Elemento 02</li>
+                    <li>Elemento 03</li>
+                    <li>Elemento 04</li>
+                    <li>Elemento 05</li>
                 </ul>
             </React.Fragment>
         )

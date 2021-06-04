@@ -5,7 +5,7 @@ class Skills extends Component {
     render() {
         return(
             <React.Fragment>
-                <h5>Conocimientos</h5>
+                <h2>Conocimientos</h2>
                 <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>

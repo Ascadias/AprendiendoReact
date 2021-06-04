@@ -5,7 +5,7 @@ class Tools extends Component {
     render() {
         return (
             <React.Fragment>
-                <h5>Herramientas</h5>
+                <h2>Herramientas</h2>
                 <ul>
                     <li>Visual Code</li>
                     <li>GitHub</li>

@@ -5,8 +5,7 @@ class Footer extends Component {
     render() {
         return (
             <React.Fragment>
-                <p><b>Copyright Ascadias SA.</b></p>
-                <p>Todos los derechos reservados.</p>
+                <b>Todos los derechos reservados. <code>2021-2022 @Ascadias S.A</code></b>
             </React.Fragment>
         )
     }
