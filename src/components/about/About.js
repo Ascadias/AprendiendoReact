@@ -1,5 +1,7 @@
 import React from 'react';
 import './About.css';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
 
 const About = () => {
     return (
@@ -7,11 +9,18 @@ const About = () => {
             <div className="about__desc">
                 <h3>Déjame Hablarte Sobre Mi</h3>
                 <p>Soy un Desarrollador Web FullStack Junior, Especializado en Javascript</p>
-                <a href=""target="_blank" className="about__a">
-                    <button classname="about__button">
-                        <h6>Descarga mi CV</h6>
-                    </button>
-                </a>
+                <Grid container>
+                    <Grid item>                
+                        <Button
+                            className="cv-button"
+                            variant="contained"
+                            color="Primary"
+                            onClick={() => { alert('Descargar') }}
+                        >
+                            Descarga mi CV
+                        </Button>
+                    </Grid>
+                </Grid>
             </div>
             <div className="about__img">
                 <img

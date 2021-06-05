@@ -9,7 +9,7 @@ const cover = () => {
             <video className="video" src={coverVideo} autoPlay loop muted />
             <Logo/>
             <h1>Marcelo Fernandez</h1>
-            <p>Desarrollador | Diseñador | Creador de Contenido | Emprendedor</p>
+            <p>Desarrollador | Diseñador | Creador de Contenido</p>
         </div>
     )
 }
