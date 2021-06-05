@@ -1,29 +1,35 @@
-
+import React, { useState, useEffect } from 'react';
 import './assets/css/App.css';
 
 //  Importar componentes
-import Presentacion from './components/Presentacion';
-import AboutMe from './components/AboutMe';
-import Skills from './components/Skills';
-import Tools from './components/Tools';
-import Aside from './components/Aside';
-import Footer from './components/Footer';
-import Nav from './components/Nav';
-import Logo from './components/Logo';
+import Cover from './components/cover/Cover';
+import Navbar from './components/navbar/Navbar';
+import About from './components/about/About';
+import Slider from './components/slider/Slider';
+import Info from './components/info/Info';
+import Footer from './components/footer/Footer';
 
 function App() {
+  const [scrollHeight, setScrollHeight] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollHeight(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("Scroll", handleScroll);
+  }, [scrollHeight]);
+
   return (
     <div className="App">
-      <header className="App-header"><Logo/><Presentacion/><Nav/></header>
-      <article className="article">
-            <section className="AboutMe"><AboutMe/></section>
-            <section className="Skills"><Skills/></section>
-            <section className="Tools"><Tools/></section>
-      </article>
-      <aside className="Aside"><Aside/></aside>
-      <footer className="Footer"><Footer/></footer>
+      <Navbar isScrolling={scrollHeight}/>
+      <Cover />
+      <About />
+      <Slider />
+      <Info />
+      <Footer />
     </div>
-    
   )
 }
 
